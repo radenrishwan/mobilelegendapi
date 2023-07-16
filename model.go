@@ -31,3 +31,16 @@ type News struct {
 	Thumbnail   string   `json:"thumbnail"`
 	Type        NewsType `json:"type"`
 }
+
+type Skill struct {
+	Name        string `json:"name"`
+	ImageUrl    string `json:"image_url"`
+	Description string `json:"description"`
+	Tips        string `json:"tips"`
+}
+
+type Hero struct {
+	Id     string  `json:"id"`
+	Name   string  `json:"name"`
+	Skills []Skill `json:"skills"`
+}
